@@ -1,16 +1,12 @@
 #include <iostream>
-#include <random>
-#include "StoryBits.h"
-#include "Game_Start.h"
+#include "GAME_FUNCTIONS.h"
 
 
-void Game();
-void abandonedPlanet();
 
-
-int main() {
-Game();
-
+int main(){
+    GAME TimetoPlay;
+    TimetoPlay.ShipSelection();
+    TimetoPlay.Play();
 }
 
 
