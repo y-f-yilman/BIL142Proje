@@ -6,7 +6,7 @@ Project Design For BIL142 Course in C++
 
 
 ![Local image](build/diagrams/class_diagram.svg "Class Diagram")
-<figcaption><center>Class Diagrams</center></figcaption>
+<center><figcaption>Class Diagrams</figcaption></center>
 
 # Space Adventure Game
 
