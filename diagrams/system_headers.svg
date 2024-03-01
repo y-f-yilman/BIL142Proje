@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="315px" preserveAspectRatio="none" style="width:473px;height:315px;" version="1.1" viewBox="0 0 473 315" width="473px" zoomAndPan="magnify"><defs><filter height="300%" id="f1nx98p9k07chq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[bfb11ec974f66674b2ada30e33b2e7c2]
+cluster C_0001898935928681923136--><polygon fill="#FFFFFF" filter="url(#f1nx98p9k07chq)" points="22,24,38,24,45,46.2969,451,46.2969,451,303,22,303,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="45" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="10" x="26" y="38.9951">..</text><!--MD5=[e7a3b08d6986eceb020dee40661edd5b]
+entity C_0002215460186166411800--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="331,59,331,95.2969,435,95.2969,435,69,425,59,331,59" style="stroke: #000000; stroke-width: 1.5;"/><path d="M425,59 L425,69 L435,69 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="84" x="341" y="81.9951">General.cpp</text><!--MD5=[93420cfe9fc5d6d19d40ece103400536]
+entity C_0000696140410809268943--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="347.5,155,347.5,191.2969,434.5,191.2969,434.5,165,424.5,155,347.5,155" style="stroke: #000000; stroke-width: 1.5;"/><path d="M424.5,155 L424.5,165 L434.5,165 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="357.5" y="177.9951">General.h</text><!--MD5=[00159574d0b802573bb92377c1d0e9c6]
+entity C_0000139360809826194467--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="156.5,59,156.5,95.2969,295.5,95.2969,295.5,69,285.5,59,156.5,59" style="stroke: #000000; stroke-width: 1.5;"/><path d="M285.5,59 L285.5,69 L295.5,69 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="166.5" y="81.9951">GameEngine.cpp</text><!--MD5=[dec28820f04d1431688ef2887b5b6704]
+entity C_0002170554398078679675--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="75,155,75,191.2969,197,191.2969,197,165,187,155,75,155" style="stroke: #000000; stroke-width: 1.5;"/><path d="M187,155 L187,165 L197,165 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="85" y="177.9951">GameEngine.h</text><!--MD5=[4cc57ae1687b07feb32355e869eee23d]
+entity C_0001493291886170991376--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="104.5,251,104.5,287.2969,167.5,287.2969,167.5,261,157.5,251,104.5,251" style="stroke: #000000; stroke-width: 1.5;"/><path d="M157.5,251 L157.5,261 L167.5,261 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="114.5" y="273.9951">Ship.h</text><!--MD5=[1234ad3098f9e3f21a4e674c5fce5534]
+entity C_0002025885017058637019--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="232,155,232,191.2969,312,191.2969,312,165,302,155,232,155" style="stroke: #000000; stroke-width: 1.5;"/><path d="M302,155 L302,165 L312,165 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="242" y="177.9951">Ship.cpp</text><!--MD5=[0dd9150b65ae2353bd1046f9aab225d3]
+entity C_0000615540661530554330--><polygon fill="#FEFECE" filter="url(#f1nx98p9k07chq)" points="38.5,59,38.5,95.2969,121.5,95.2969,121.5,69,111.5,59,38.5,59" style="stroke: #000000; stroke-width: 1.5;"/><path d="M111.5,59 L111.5,69 L121.5,69 " fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="63" x="48.5" y="81.9951">main.cpp</text><!--MD5=[d392aa44609b16d975165b2d4af06391]
+link C_0002215460186166411800 to C_0000696140410809268943--><path d="M384.47,95.24 C385.76,110.48 387.66,132.81 389.08,149.46 " fill="none" id="C_0002215460186166411800-&gt;C_0000696140410809268943" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="389.54,154.87,392.781,145.5697,389.126,149.8872,384.8085,146.2321,389.54,154.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b7a7014d96a611fc61d6889e091b6080]
+link C_0000139360809826194467 to C_0002170554398078679675--><path d="M209.49,95.24 C194.4,111.01 172.03,134.37 155.94,151.17 " fill="none" id="C_0000139360809826194467-&gt;C_0002170554398078679675" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="152.4,154.87,161.519,151.1491,155.8633,151.2636,155.7488,145.6079,152.4,154.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[257d7fece0b94f4e5d4765e11b181193]
+link C_0000139360809826194467 to C_0000696140410809268943--><path d="M255.88,95.02 C284.18,111.14 326.65,135.34 356.4,152.29 " fill="none" id="C_0000139360809826194467-&gt;C_0000696140410809268943" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="361.06,154.95,355.236,147.0077,356.7205,152.4662,351.262,153.9508,361.06,154.95" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4c2565c0958ecf31dc546569fde7d0cc]
+link C_0002170554398078679675 to C_0001493291886170991376--><path d="M136,191.24 C136,206.48 136,228.81 136,245.46 " fill="none" id="C_0002170554398078679675-&gt;C_0001493291886170991376" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="136,250.87,140,241.87,136,245.87,132,241.87,136,250.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a2adb2e3a1bf8635179b85b4114cff46]
+link C_0002025885017058637019 to C_0001493291886170991376--><path d="M247.37,191.02 C224.22,207.03 189.55,230.99 165.05,247.92 " fill="none" id="C_0002025885017058637019-&gt;C_0001493291886170991376" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="160.9,250.79,170.5782,248.9646,165.0135,247.9477,166.0305,242.383,160.9,250.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[41dd96ae84413758b312468322785f61]
+link C_0000615540661530554330 to C_0002170554398078679675--><path d="M90.27,95.24 C99.51,110.74 113.11,133.59 123.08,150.32 " fill="none" id="C_0000615540661530554330-&gt;C_0002170554398078679675" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="125.79,154.87,124.6278,145.09,123.2343,150.5725,117.7518,149.179,125.79,154.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[63690452d027375daba21f7de997290f]
+link C_0000615540661530554330 to C_0000696140410809268943--><path d="M121.62,90.58 C178.85,107.88 281.64,138.95 342.36,157.3 " fill="none" id="C_0000615540661530554330-&gt;C_0000696140410809268943" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="347.37,158.81,339.9077,152.3823,342.5828,157.3667,337.5985,160.0418,347.37,158.81" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[efa5db9c1d7386b273970fd375b824ff]
+link C_0000615540661530554330 to C_0001493291886170991376--><path d="M70.74,95.09 C59.74,117.77 44.51,158.73 58,191 C67.67,214.14 88.07,233.87 105.58,247.56 " fill="none" id="C_0000615540661530554330-&gt;C_0001493291886170991376" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="109.96,250.91,105.2487,242.2611,105.991,247.869,100.3831,248.6114,109.96,250.91" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[23978a83e3798abfb3b9b694241b16c2]
+@startuml
+folder ".." as C_0001898935928681923136 {
+file "General.cpp" as C_0002215460186166411800
+file "General.h" as C_0000696140410809268943
+file "GameEngine.cpp" as C_0000139360809826194467
+file "GameEngine.h" as C_0002170554398078679675
+file "Ship.h" as C_0001493291886170991376
+file "Ship.cpp" as C_0002025885017058637019
+file "main.cpp" as C_0000615540661530554330
+}
+C_0002215460186166411800 - -> C_0000696140410809268943
+C_0000139360809826194467 - -> C_0002170554398078679675
+C_0000139360809826194467 - -> C_0000696140410809268943
+C_0002170554398078679675 - -> C_0001493291886170991376
+C_0002025885017058637019 - -> C_0001493291886170991376
+C_0000615540661530554330 - -> C_0002170554398078679675
+C_0000615540661530554330 - -> C_0000696140410809268943
+C_0000615540661530554330 - -> C_0001493291886170991376
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 13:22:07 TRT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.9+9-Ubuntu-122.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
