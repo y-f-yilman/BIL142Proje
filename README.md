@@ -5,6 +5,9 @@ Project Design For BIL142 Course in C++
     <figcaption>System Headers</figcaption>
 
 \
+&nbsp;
+\
+&nbsp;
 
 ![Local image](build/diagrams/class_diagram.svg "Class Diagram")
     <figcaption>Class Diagrams</figcaption>
