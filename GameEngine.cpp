@@ -4,6 +4,8 @@
 #include <ctime>   // For time()
 #include <iostream>
 #include <sstream> // Include for std::ostringstream
+#include <random>
+
 
 void GameEngine::displayStatus() const {
   std::ostringstream statusStream;
@@ -32,14 +34,15 @@ GameEngine::GameEngine(Ship::Type shipType)
 }
 
 void GameEngine::startGame() {
-  std::cout << "The journey begins..." << std::endl;
+  std::cout << "You enter your ship and " << std::endl;
   displayStatus(); // Initial display of ship status at the start of the game
 
-  while (playerShip.getFuel() > 0 && eventCount < 5) {
-    int eventIndex = rand() % eventHandlers.size();
+
+  while (playerShip.getFuel() > 0 && playerShip.getHealth() > 0  &&eventCount < 5) {
+      int eventIndex = rand() % eventHandlers.size();
     executeEvent(static_cast<Event>(eventIndex));
     eventCount++;
-    displayStatus(); // Display updated status after each event
+     displayStatus();// Display updated status after each event
   }
   calculateFinalScore(); // This will display the final score
 }
@@ -53,7 +56,25 @@ void GameEngine::executeEvent(Event event) {
 }
 
 void GameEngine::handleAsteroidBelt() {
-  std::cout << "Navigating through the Asteroid Belt..." << std::endl;
+    int asteroid_event = rand() % 7;
+    std::ostringstream asteroidBelt_reason;
+    switch (asteroid_event){
+        case 1 :
+            asteroidBelt_reason << "Your path is blocked by a cosmic anomaly " << std::endl;
+            break;
+        case 2 :
+            asteroidBelt_reason << "You have received a distress signal from an asteroid belt, once you arrived, you find the wreckage of a ship" << std::endl;
+            asteroidBelt_reason << "The ship turns into a ball of fire and explodes" << std::endl;
+            break;
+        case 3:
+            asteroidBelt_reason << "You came across a VOYAGER claiming that he found a COSMIC POTATO cache in an asteroid belt" << std::endl;
+            asteroidBelt_reason << "Once you arrive at the cache you find the place emptied" << std::endl;
+            asteroidBelt_reason << "You see pirate ships coming your way" << std::endl;
+            break;
+        case 4:
+            asteroidBelt_reason << "A SKFOSMF beast starts to chase your ship" << std::endl;
+    }
+  asteroidBelt_reason << "You have no other choice but to go through the asteroid belt" << std::endl;
   if (rand() % 2 == 0) {
     playerShip.takeDamage(10);
     std::cout << "Took" << 10 * playerShip.damageModifier(playerShip.getType())
@@ -92,8 +113,7 @@ void GameEngine::handleSpacePirates() {
         escapeAttempted = true; // Mark escape as attempted
         continue;
       }
-      float escapeChance = Ship::escapeProbability(playerShip.getType()) *
-                           50; // Base escape chance
+      float escapeChance = Ship::escapeProbability(playerShip.getType()) * 50; // Base escape chance
       if (rand() % 100 < escapeChance) {
         General::printWithTypingEffect(
             "Successfully escaped the space pirates!");
@@ -138,3 +158,4 @@ void GameEngine::calculateFinalScore() const {
               (playerShip.getMoney() * 10);
   std::cout << "Game Over. Your final score is: " << score << std::endl;
 }
+

@@ -5,15 +5,16 @@
 
 class Ship {
 public:
-  enum class Type { Fast, Strong, Normal };
+  enum class Type { Fast, Strong, Normal, Voyager };
 
 private:
   Type type;
-  int fuel;
   int health;
+  int fuel;
   int money;
 
 public:
+
   Ship(Type type);
   void takeDamage(int amount);
   void refuel(int amount);

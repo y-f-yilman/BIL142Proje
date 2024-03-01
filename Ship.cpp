@@ -24,6 +24,9 @@ float Ship::escapeProbability(Type type) {
     return 1.5f;
   case Type::Strong:
     return 0.5f;
+      case Type::Voyager:
+          return 1.5f;
+
   default:
     return 1.0f;
   }
@@ -35,6 +38,8 @@ float Ship::damageModifier(Type type) {
     return 1.5f;
   case Type::Strong:
     return 0.5f;
+      case Type::Voyager:
+          return 0.5f;
   default:
     return 1.0f;
   }
