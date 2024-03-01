@@ -1,3 +1,0 @@
-/home/yusuf/Documents/BIL142Proje/build/CMakeFiles/SpaceAdventureGame.dir
-/home/yusuf/Documents/BIL142Proje/build/CMakeFiles/edit_cache.dir
-/home/yusuf/Documents/BIL142Proje/build/CMakeFiles/rebuild_cache.dir
