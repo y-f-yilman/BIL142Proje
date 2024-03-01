@@ -1,7 +1,7 @@
 # BIL142Proje
 Project Design For BIL142 Course in C++
 
-![Local image](build/diagrams/system_headers.svg "System Headers")
+![Local image](diagrams/system_headers.svg "System Headers")
     <figcaption>System Headers</figcaption>
 
 \
@@ -9,7 +9,7 @@ Project Design For BIL142 Course in C++
 \
 &nbsp;
 
-![Local image](build/diagrams/class_diagram.svg "Class Diagram")
+![Local image](diagrams/class_diagram.svg "Class Diagram")
     <figcaption>Class Diagrams</figcaption>
 
 # Space Adventure Game
