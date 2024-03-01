@@ -1,0 +1,58 @@
+void GameEngine::handleSpacePirates() {
+  std::string message = "Facing Space Pirates. Choose your action: Escape (E), "
+                        "Fight (F), or Negotiate (N).";
+  std::string action;
+  bool escapeAttempted = false;
+  bool negotiationAttempted = false;
+
+  while (true) {
+    General::printWithTypingEffect(message);
+    action = General::getUserInput();
+
+    if (action == "E" && !escapeAttempted) {
+      if (playerShip.getFuel() < 33) {
+        General::printWithTypingEffect("Not enough fuel to escape!");
+        escapeAttempted = true; // Mark escape as attempted
+        continue;
+      }
+      float escapeChance = Ship::escapeProbability(playerShip.getType()) *
+                           50; // Base escape chance
+      if (rand() % 100 < escapeChance) {
+        General::printWithTypingEffect(
+            "Successfully escaped the space pirates!");
+        playerShip.refuel(-33); // Deduct fuel for the escape attempt
+        break;                  // Exit the encounter
+      } else {
+        General::printWithTypingEffect(
+            "Failed to escape. You cannot attempt to escape again.");
+        escapeAttempted = true; // Mark escape as attempted
+      }
+    } else if (action == "F") {
+      // Fighting logic
+      General::printWithTypingEffect(
+          rand() % 2 == 0 ? "Won the fight against the space pirates!"
+                          : "Lost the fight, taking damage.");
+      playerShip.takeDamage(rand() % 2 == 0 ? 0 : 30);
+      break; // Exit the encounter
+    } else if (action == "N" && !negotiationAttempted) {
+      int goldOptions[3] = {10, 20, 30};
+      int demand = goldOptions[rand() % 3];
+      if (playerShip.getMoney() < demand) {
+        General::printWithTypingEffect("Not enough gold to negotiate!");
+        negotiationAttempted = true; // Mark negotiation as attempted
+        continue;
+      }
+      playerShip.earnMoney(-demand); // Pay the pirates
+      std::ostringstream demandMessage;
+      demandMessage << "Negotiated with the pirates for " << demand << " gold.";
+      General::printWithTypingEffect(demandMessage.str());
+      break; // Exit the encounter
+    } else if ((action == "E" && escapeAttempted) ||
+               (action == "N" && negotiationAttempted)) {
+      General::printWithTypingEffect("You cannot choose this action again.");
+    } else {
+      General::printWithTypingEffect("Invalid action. Please choose again.");
+    }
+  }
+}
+

@@ -1,0 +1,62 @@
+void GameEngine::handleSpacePirates() {
+  std::cout << "Facing Space Pirates. Choose your action: Escape (E), Fight "
+               "(F), or Negotiate (N)."
+            << std::endl;
+  std::string action = General::getUserInput();
+  // Check if the action has failed previously
+  if (failedActions.find(action[0]) != failedActions.end()) {
+    std::cout << "You've already failed with this action. Choose another."
+              << std::endl;
+    handleSpacePirates();
+    return;
+  }
+  if (action == "E") {
+    // Check if fuel is sufficient for escape
+    if (playerShip.getFuel() < 33) {
+      std::cout << "Insufficient fuel to escape!" << std::endl;
+      failedActions.insert('E'); // Record failed action
+      handleSpacePirates();      // Ask for input again
+      return;
+    }
+    // Handling escape based on ship type
+    float escapeChance = Ship::escapeProbability(playerShip.getType());
+    if (rand() % 100 <
+        escapeChance * 50) { // Assuming 50% base chance for normal ship
+      std::cout << "Successfully escaped the space pirates!" << std::endl;
+      playerShip.refuel(-33); // Deduct fuel for the escape attempt
+      failedActions.clear();  // Clear failed event cache for the nex event
+    } else {
+      std::cout << "Failed to escape. Facing the space pirates again."
+                << std::endl;
+      failedActions.insert('E'); // Record failed action
+      handleSpacePirates();      // Recursive call to handle failure case
+    }
+  } else if (action == "F") {
+    // Handling fight with a 50% base chance to win or lose
+    if (rand() % 2 == 0) {
+      std::cout << "Won the fight against the space pirates!" << std::endl;
+    } else {
+      std::cout << "Lost the fight, taking damage." << std::endl;
+      playerShip.takeDamage(30); // Simplified logic for damage
+    }
+    failedActions.clear();
+  } else if (action == "N") {
+    // Handling negotiation
+    int goldOptions[3] = {10, 20, 30};
+    int demand = goldOptions[rand() % 3];
+    std::cout << "Pirates demand " << demand << " gold for passage."
+              << std::endl;
+    if (playerShip.getMoney() < demand) {
+      std::cout << "Insufficient gold to negotiate!" << std::endl;
+      failedActions.insert('N'); // Record failed action
+      handleSpacePirates();
+      return;
+    }
+    playerShip.earnMoney(-demand);
+    failedActions.clear();
+  } else {
+    std::cout << "Invalid action. Please choose again." << std::endl;
+    handleSpacePirates(); // Ask for input again if invalid
+  }
+}
+
