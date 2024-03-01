@@ -2,8 +2,10 @@
 Project Design For BIL142 Course in C++
 
 ![Local image](build/diagrams/system_headers.svg "System Headers")
+<figcaption>System Headers</figcaption>
 
 ![Local image](build/diagrams/class_diagram.svg "Class Diagram")
+<figcaption>Class Diagrams</figcaption>
 
 # Space Adventure Game
 
@@ -11,8 +13,8 @@ Project Design For BIL142 Course in C++
 Space Adventure Game is a console-based game where you navigate a spaceship through a series of events in space.
 
 ## Requirements
-- CMake 3.10 or higher
-- A C++17 compliant compiler
+- `CMake 3.10` or higher
+- A `C++17` compliant compiler
 
 ## Compilation Using Cmake
 To compile the game, follow these steps:
