@@ -20,7 +20,7 @@ Space Adventure Game is a console-based game where you navigate a spaceship thro
 
 ## Requirements
 - `CMake 3.10` or higher
-- A `C++17` compliant compiler
+- `C++17` compliant compiler
 
 ## Compilation Using Cmake
 To compile the game, follow these steps:
