@@ -17,7 +17,6 @@ Project Design For BIL142 Course in C++
 ## Description
 Space Adventure Game is a console-based game where you navigate a spaceship through a series of events in space.
 
-`NOTE:` A precompiled binary is already present inside the build directory and can be executed to play the game!
 
 ## Requirements
 - `CMake 3.10` or higher
