@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yusuf/Documents/142proje/BIL142Proje
+CMAKE_SOURCE_DIR = /home/yusuf/Documents/BIL142Proje
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yusuf/Documents/142proje/BIL142Proje/build
+CMAKE_BINARY_DIR = /home/yusuf/Documents/BIL142Proje/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SpaceAdventureGame.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/SpaceAdventureGame.dir/flags.make
 CMakeFiles/SpaceAdventureGame.dir/main.cpp.o: CMakeFiles/SpaceAdventureGame.dir/flags.make
 CMakeFiles/SpaceAdventureGame.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SpaceAdventureGame.dir/main.cpp.o: CMakeFiles/SpaceAdventureGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/main.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/main.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/main.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/main.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/main.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/main.cpp.o -c /home/yusuf/Documents/BIL142Proje/main.cpp
 
 CMakeFiles/SpaceAdventureGame.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceAdventureGame.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/142proje/BIL142Proje/main.cpp > CMakeFiles/SpaceAdventureGame.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/BIL142Proje/main.cpp > CMakeFiles/SpaceAdventureGame.dir/main.cpp.i
 
 CMakeFiles/SpaceAdventureGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceAdventureGame.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/142proje/BIL142Proje/main.cpp -o CMakeFiles/SpaceAdventureGame.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/BIL142Proje/main.cpp -o CMakeFiles/SpaceAdventureGame.dir/main.cpp.s
 
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o: CMakeFiles/SpaceAdventureGame.dir/flags.make
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o: ../Ship.cpp
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o: CMakeFiles/SpaceAdventureGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o -c /home/yusuf/Documents/BIL142Proje/Ship.cpp
 
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp > CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/BIL142Proje/Ship.cpp > CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.i
 
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp -o CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/BIL142Proje/Ship.cpp -o CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.s
 
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o: CMakeFiles/SpaceAdventureGame.dir/flags.make
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o: CMakeFiles/SpaceAdventureGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o -c /home/yusuf/Documents/BIL142Proje/GameEngine.cpp
 
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp > CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/BIL142Proje/GameEngine.cpp > CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.i
 
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp -o CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/BIL142Proje/GameEngine.cpp -o CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.s
 
 CMakeFiles/SpaceAdventureGame.dir/General.cpp.o: CMakeFiles/SpaceAdventureGame.dir/flags.make
 CMakeFiles/SpaceAdventureGame.dir/General.cpp.o: ../General.cpp
 CMakeFiles/SpaceAdventureGame.dir/General.cpp.o: CMakeFiles/SpaceAdventureGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/General.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/General.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/General.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/General.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/General.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yusuf/Documents/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceAdventureGame.dir/General.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceAdventureGame.dir/General.cpp.o -MF CMakeFiles/SpaceAdventureGame.dir/General.cpp.o.d -o CMakeFiles/SpaceAdventureGame.dir/General.cpp.o -c /home/yusuf/Documents/BIL142Proje/General.cpp
 
 CMakeFiles/SpaceAdventureGame.dir/General.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceAdventureGame.dir/General.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/142proje/BIL142Proje/General.cpp > CMakeFiles/SpaceAdventureGame.dir/General.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yusuf/Documents/BIL142Proje/General.cpp > CMakeFiles/SpaceAdventureGame.dir/General.cpp.i
 
 CMakeFiles/SpaceAdventureGame.dir/General.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceAdventureGame.dir/General.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/142proje/BIL142Proje/General.cpp -o CMakeFiles/SpaceAdventureGame.dir/General.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yusuf/Documents/BIL142Proje/General.cpp -o CMakeFiles/SpaceAdventureGame.dir/General.cpp.s
 
 # Object files for target SpaceAdventureGame
 SpaceAdventureGame_OBJECTS = \
@@ -141,7 +141,7 @@ SpaceAdventureGame: CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o
 SpaceAdventureGame: CMakeFiles/SpaceAdventureGame.dir/General.cpp.o
 SpaceAdventureGame: CMakeFiles/SpaceAdventureGame.dir/build.make
 SpaceAdventureGame: CMakeFiles/SpaceAdventureGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SpaceAdventureGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yusuf/Documents/BIL142Proje/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SpaceAdventureGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceAdventureGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/SpaceAdventureGame.dir/clean:
 .PHONY : CMakeFiles/SpaceAdventureGame.dir/clean
 
 CMakeFiles/SpaceAdventureGame.dir/depend:
-	cd /home/yusuf/Documents/142proje/BIL142Proje/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yusuf/Documents/142proje/BIL142Proje /home/yusuf/Documents/142proje/BIL142Proje /home/yusuf/Documents/142proje/BIL142Proje/build /home/yusuf/Documents/142proje/BIL142Proje/build /home/yusuf/Documents/142proje/BIL142Proje/build/CMakeFiles/SpaceAdventureGame.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yusuf/Documents/BIL142Proje/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yusuf/Documents/BIL142Proje /home/yusuf/Documents/BIL142Proje /home/yusuf/Documents/BIL142Proje/build /home/yusuf/Documents/BIL142Proje/build /home/yusuf/Documents/BIL142Proje/build/CMakeFiles/SpaceAdventureGame.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SpaceAdventureGame.dir/depend
 

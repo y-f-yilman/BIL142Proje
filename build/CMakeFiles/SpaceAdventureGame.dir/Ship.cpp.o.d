@@ -1,8 +1,6 @@
 CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o: \
- /home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp \
- /usr/include/stdc-predef.h \
- /home/yusuf/Documents/142proje/BIL142Proje/Ship.h \
- /usr/include/c++/11/string \
+ /home/yusuf/Documents/BIL142Proje/Ship.cpp /usr/include/stdc-predef.h \
+ /home/yusuf/Documents/BIL142Proje/Ship.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

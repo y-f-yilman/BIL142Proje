@@ -1,9 +1,8 @@
 CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o: \
- /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp \
+ /home/yusuf/Documents/BIL142Proje/GameEngine.cpp \
  /usr/include/stdc-predef.h \
- /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.h \
- /home/yusuf/Documents/142proje/BIL142Proje/Ship.h \
- /usr/include/c++/11/string \
+ /home/yusuf/Documents/BIL142Proje/GameEngine.h \
+ /home/yusuf/Documents/BIL142Proje/Ship.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -154,10 +153,10 @@ CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o: \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/yusuf/Documents/142proje/BIL142Proje/General.h \
- /usr/include/c++/11/ctime /usr/include/c++/11/iostream \
- /usr/include/c++/11/ostream /usr/include/c++/11/ios \
- /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
+ /home/yusuf/Documents/BIL142Proje/General.h /usr/include/c++/11/ctime \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/ios_base.h \

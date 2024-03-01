@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp" "CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o.d"
-  "/home/yusuf/Documents/142proje/BIL142Proje/General.cpp" "CMakeFiles/SpaceAdventureGame.dir/General.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/General.cpp.o.d"
-  "/home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp" "CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o.d"
-  "/home/yusuf/Documents/142proje/BIL142Proje/main.cpp" "CMakeFiles/SpaceAdventureGame.dir/main.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/main.cpp.o.d"
+  "/home/yusuf/Documents/BIL142Proje/GameEngine.cpp" "CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o.d"
+  "/home/yusuf/Documents/BIL142Proje/General.cpp" "CMakeFiles/SpaceAdventureGame.dir/General.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/General.cpp.o.d"
+  "/home/yusuf/Documents/BIL142Proje/Ship.cpp" "CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o.d"
+  "/home/yusuf/Documents/BIL142Proje/main.cpp" "CMakeFiles/SpaceAdventureGame.dir/main.cpp.o" "gcc" "CMakeFiles/SpaceAdventureGame.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

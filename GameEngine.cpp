@@ -17,7 +17,7 @@ void GameEngine::displayStatus() const {
   statusStream << "Current Score: " << score << "\n" << std::endl;
 
   General::printWithTypingEffect(
-      statusStream.str(), 25); // Use the typing effect for the status display
+      statusStream.str()); // Typing effect for the status display
 }
 
 GameEngine::GameEngine(Ship::Type shipType)
@@ -54,8 +54,14 @@ void GameEngine::executeEvent(Event event) {
 
 void GameEngine::handleAsteroidBelt() {
   std::cout << "Navigating through the Asteroid Belt..." << std::endl;
-  playerShip.takeDamage(10);
-  std::cout << "Took 10 damage!" << std::endl;
+  if (rand() % 2 == 0) {
+    playerShip.takeDamage(10);
+    std::cout << "Took" << 10 * playerShip.damageModifier(playerShip.getType())
+              << "damage!" << std::endl;
+
+  } else {
+    std::cout << "Escaped without taking damage." << std::endl;
+  }
 }
 
 void GameEngine::handleAbandonedPlanet() {

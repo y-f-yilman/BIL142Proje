@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yusuf/Documents/142proje/BIL142Proje
+CXX_INCLUDES = -I/home/yusuf/Documents/BIL142Proje
 
 CXX_FLAGS = 
 
