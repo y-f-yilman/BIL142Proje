@@ -2,11 +2,12 @@
 Project Design For BIL142 Course in C++
 
 ![Local image](build/diagrams/system_headers.svg "System Headers")
-<figcaption>System Headers</figcaption>
+    <figcaption>System Headers</figcaption>
 
+\
 
 ![Local image](build/diagrams/class_diagram.svg "Class Diagram")
-<center><figcaption>Class Diagrams</figcaption></center>
+    <figcaption>Class Diagrams</figcaption>
 
 # Space Adventure Game
 
