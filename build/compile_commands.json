@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/yusuf/Documents/142proje/BIL142Proje/build",
+  "command": "/usr/bin/c++  -I/home/yusuf/Documents/142proje/BIL142Proje  -o CMakeFiles/SpaceAdventureGame.dir/main.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/main.cpp",
+  "file": "/home/yusuf/Documents/142proje/BIL142Proje/main.cpp"
+},
+{
+  "directory": "/home/yusuf/Documents/142proje/BIL142Proje/build",
+  "command": "/usr/bin/c++  -I/home/yusuf/Documents/142proje/BIL142Proje  -o CMakeFiles/SpaceAdventureGame.dir/Ship.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp",
+  "file": "/home/yusuf/Documents/142proje/BIL142Proje/Ship.cpp"
+},
+{
+  "directory": "/home/yusuf/Documents/142proje/BIL142Proje/build",
+  "command": "/usr/bin/c++  -I/home/yusuf/Documents/142proje/BIL142Proje  -o CMakeFiles/SpaceAdventureGame.dir/GameEngine.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp",
+  "file": "/home/yusuf/Documents/142proje/BIL142Proje/GameEngine.cpp"
+},
+{
+  "directory": "/home/yusuf/Documents/142proje/BIL142Proje/build",
+  "command": "/usr/bin/c++  -I/home/yusuf/Documents/142proje/BIL142Proje  -o CMakeFiles/SpaceAdventureGame.dir/General.cpp.o -c /home/yusuf/Documents/142proje/BIL142Proje/General.cpp",
+  "file": "/home/yusuf/Documents/142proje/BIL142Proje/General.cpp"
+}
+]
