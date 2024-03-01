@@ -25,6 +25,7 @@ public:
   int getMoney() const;
   static float escapeProbability(Type type);
   static float damageModifier(Type type);
+  static int fuelModifier(Type type);
 };
 
 #endif // SHIP_H

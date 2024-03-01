@@ -5,6 +5,7 @@
 #include <functional>
 #include <unordered_set> // Include unordered_set for storing failed actions
 #include <vector>
+#include <random>
 
 class GameEngine {
 public:

@@ -26,7 +26,6 @@ float Ship::escapeProbability(Type type) {
     return 0.5f;
       case Type::Voyager:
           return 1.5f;
-
   default:
     return 1.0f;
   }
@@ -43,4 +42,13 @@ float Ship::damageModifier(Type type) {
   default:
     return 1.0f;
   }
+}
+
+int Ship::fuelModifier(Type type){
+    switch(type){
+        case Type::Voyager:
+            return 20;
+        default:
+            return 33;
+    }
 }

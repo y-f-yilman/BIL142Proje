@@ -5,7 +5,7 @@
 
 General::General() {}
 
-std::string General::getUserInput() {
+std::string General::getUserInput(char i) {
   std::string input;
   std::cin >> input;
   return input;

@@ -32,14 +32,14 @@ void printASCIIArt(){
 void displayWelcomeMessage() {
   std::ostringstream welcomeMessage;
   welcomeMessage << "WELCOME TO THE SPACE VOYAGER!" << std::endl;
-  welcomeMessage << "Thank you for purchasing the Divan Edition"<< std::endl;
+  welcomeMessage << "Thank you for purchasing the Divan Edition*"<< std::endl;
   welcomeMessage << "You will start the game with 20 Galactic Credits[Divan Edition Exclusive]" << std::endl;
   welcomeMessage << "You unlocked THE VOYAGER[Divan Edition Exclusive] which has a higher chance in overcoming every obstacle in your way." << std::endl;
   welcomeMessage
       << "You are a member of a guild called SPACE VOYAGERS who wishes to explore the endlessness of the space."
       << std::endl;
   welcomeMessage << "You have been chosen by the SPACE VOYAGER COUNCIL as a new voyager." << std::endl;
-  welcomeMessage << "You have five days to prove the guild that you are a worthy voyager." << std::endl;
+  welcomeMessage <<"You have five days to prove the guild that you are a worthy voyager." << std::endl;
   General::printWithTypingEffect(welcomeMessage.str());
 }
 
@@ -75,14 +75,26 @@ Ship::Type getUserShipSelection() {
 
 int main() {
 
-  printASCIIArt();
-  std::this_thread::sleep_for(std::chrono::seconds(2));
-  displayWelcomeMessage();
-  displayShipSelection();
-  Ship::Type selectedShipType = getUserShipSelection();
-  GameEngine gameEngine(selectedShipType);
-
-  gameEngine.startGame();
-
+    bool continuPlaying = true;
+while (true){
+    char answer;
+        printASCIIArt();
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        displayWelcomeMessage();
+        displayShipSelection();
+        Ship::Type selectedShipType = getUserShipSelection();
+        GameEngine gameEngine(selectedShipType);
+        gameEngine.startGame();
+        std::cout << "Continue?(Y/N):";
+        General::getUserInput(answer);
+    switch(answer){
+        case 'Y':
+            continuPlaying = true;
+            break;
+        case 'N':
+            continuPlaying = false;
+            break;
+    }
+    }
   return 0;
 }

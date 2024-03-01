@@ -5,6 +5,7 @@
 #include <iostream>
 #include <sstream> // Include for std::ostringstream
 #include <random>
+#include <string>
 
 
 void GameEngine::displayStatus() const {
@@ -26,7 +27,6 @@ GameEngine::GameEngine(Ship::Type shipType)
     : playerShip(shipType), eventCount(0) {
   // Seed the random number generator
   srand(static_cast<unsigned>(time(0)));
-
   // Initialize event handlers
   eventHandlers.push_back(std::bind(&GameEngine::handleAsteroidBelt, this));
   eventHandlers.push_back(std::bind(&GameEngine::handleAbandonedPlanet, this));
@@ -34,60 +34,83 @@ GameEngine::GameEngine(Ship::Type shipType)
 }
 
 void GameEngine::startGame() {
-  std::cout << "You enter your ship and " << std::endl;
-  displayStatus(); // Initial display of ship status at the start of the game
+  std::cout << "You enter your ship and leave the SPACE VOYAGERs GUILD STRONGHOLD " << std::endl;
+   // Initial display of ship status at the start of the game
 
 
   while (playerShip.getFuel() > 0 && playerShip.getHealth() > 0  &&eventCount < 5) {
-      int eventIndex = rand() % eventHandlers.size();
+      std::random_device random_generator; //random generator to choose the events
+      std::mt19937 gen(random_generator());
+      std::uniform_int_distribution<>distribution(0,2);
+      int eventIndex = distribution(gen);
     executeEvent(static_cast<Event>(eventIndex));
     eventCount++;
+    std::ostringstream Day;
+    int k = static_cast<int>(eventCount);
+    Day << "Day " << k;
+    General::printWithTypingEffect(Day.str());
      displayStatus();// Display updated status after each event
   }
   calculateFinalScore(); // This will display the final score
 }
 
 void GameEngine::executeEvent(Event event) {
-  auto eventIndex =
-      static_cast<std::vector<std::function<void()>>::size_type>(event);
+  auto eventIndex = static_cast<std::vector<std::function<void()>>::size_type>(event);
   if (eventIndex < eventHandlers.size()) {
     eventHandlers[eventIndex]();
   }
 }
 
 void GameEngine::handleAsteroidBelt() {
-    int asteroid_event = rand() % 7;
+    std::random_device random_generator; //random generator to choose the events
+    std::mt19937 gen(random_generator());
+    std::uniform_int_distribution<>distribution(1,4);
+    int asteroid_event = distribution(gen);
     std::ostringstream asteroidBelt_reason;
     switch (asteroid_event){
         case 1 :
-            asteroidBelt_reason << "Your path is blocked by a cosmic anomaly " << std::endl;
+            General::printWithTypingEffect("Your path is blocked by a cosmic anomaly ");
+            General::printWithTypingEffect("You have no other choice but to go through the asteroid belt");
             break;
         case 2 :
-            asteroidBelt_reason << "You have received a distress signal from an asteroid belt, once you arrived, you find the wreckage of a ship" << std::endl;
-            asteroidBelt_reason << "The ship turns into a ball of fire and explodes" << std::endl;
+            General::printWithTypingEffect("You have received a distress signal from an asteroid belt, once you arrived, you find the wreckage of a ship");
+            General::printWithTypingEffect("The ship turns into a ball of fire and explodes");
+            General::printWithTypingEffect("You have no other choice but to go through the asteroid belt");
             break;
         case 3:
-            asteroidBelt_reason << "You came across a VOYAGER claiming that he found a COSMIC POTATO cache in an asteroid belt" << std::endl;
-            asteroidBelt_reason << "Once you arrive at the cache you find the place emptied" << std::endl;
-            asteroidBelt_reason << "You see pirate ships coming your way" << std::endl;
+            General::printWithTypingEffect("You came across a VOYAGER claiming that he found a COSMIC POTATO cache in an asteroid belt");
+            General::printWithTypingEffect("Once you arrive at the cache you find the place emptied");
+            General::printWithTypingEffect("You see pirate ships coming your way");
+            General::printWithTypingEffect("You have no other choice but to go through the asteroid belt");
             break;
         case 4:
-            asteroidBelt_reason << "A SKFOSMF beast starts to chase your ship" << std::endl;
+            General::printWithTypingEffect("A SKFOSMF beast starts to chase your ship");
+            General::printWithTypingEffect("You have no other choice but to go through the asteroid belt");
     }
-  asteroidBelt_reason << "You have no other choice but to go through the asteroid belt" << std::endl;
-  if (rand() % 2 == 0) {
-    playerShip.takeDamage(10);
-    std::cout << "Took" << 10 * playerShip.damageModifier(playerShip.getType())
-              << "damage!" << std::endl;
-
-  } else {
-    std::cout << "Escaped without taking damage." << std::endl;
-  }
+    std::random_device random_generator2; //random generator to choose the events
+    std::mt19937 gen2(random_generator2());
+    std::uniform_int_distribution<>distribution2(1,2);
+    int hitPossibility = distribution2(gen2);
+    std::ostringstream hitMessage;
+    switch (hitPossibility){
+        case 1:
+            hitMessage << "You took "<< playerShip.damageModifier((playerShip.getType()))*10 << " damage";
+            General::printWithTypingEffect(hitMessage.str());
+            playerShip.takeDamage(10);
+            break;
+        case 2:
+            General::printWithTypingEffect("You got out of the asteroid belt without taking damage");
+            break;
+    }
 }
 
 void GameEngine::handleAbandonedPlanet() {
   std::cout << "Exploring an Abandoned Planet..." << std::endl;
-  if (rand() % 2 == 0) {
+    std::random_device random_generator; //random generator to choose the events
+    std::mt19937 gen(random_generator());
+    std::uniform_int_distribution<>distribution(1,2);
+    int abandonedPlanet = distribution(gen);
+  if (abandonedPlanet == 1) {
     std::cout << "Found 10 gold!" << std::endl;
     playerShip.earnMoney(10);
   } else {
@@ -97,60 +120,75 @@ void GameEngine::handleAbandonedPlanet() {
 }
 
 void GameEngine::handleSpacePirates() {
-  std::string message = "Facing Space Pirates. Choose your action: Escape (E), "
-                        "Fight (F), or Negotiate (N).";
-  std::string action;
-  bool escapeAttempted = false;
-  bool negotiationAttempted = false;
+    bool escapeAttempt = false;
+    bool negotiationAttempt = false;
+    std::string message = "Facing Space Pirates. Choose your action: Escape(E), Fight(F) or Negotiate(N)";
+    std::string action;
+    while (true){
+        General::printWithTypingEffect(message);
+        action = General::getUserInput(0);
+        if(action == "E" && !escapeAttempt){
+            if(playerShip.getFuel() < 33){
+                General::printWithTypingEffect("NOT ENOUGH FUEL");
+                escapeAttempt = true;
+                continue;
+            }
+            playerShip.refuel(-(playerShip.fuelModifier(playerShip.getType())));
+            float escapeChance = Ship::escapeProbability(playerShip.getType()) * 50;
+            std::random_device random_generator; //random generator to choose the events
+            std::mt19937 gen(random_generator());
+            std::uniform_int_distribution<>distribution(1,100);
+            int escape = distribution(gen);
+            if(escape < escapeChance){
+                General::printWithTypingEffect("Successfully escaped the space pirates!");
+                break;
+            }
+            else {
+                General::printWithTypingEffect("Failed to escape. You cannot escape again.");
+                escapeAttempt = true;
+                continue;
+            }
+        }
+        else if (action == "F"){
+            std::random_device random_generator; //random generator to choose the events
+            std::mt19937 gen(random_generator());
+            std::uniform_int_distribution<>distribution(1,2);
+            int fightwin = distribution(gen);
+            switch (fightwin){
+                case 1:
+                    General::printWithTypingEffect("LOST THE FIGHT");
+                    playerShip.takeDamage(30);
 
-  while (true) {
-    General::printWithTypingEffect(message);
-    action = General::getUserInput();
-
-    if (action == "E" && !escapeAttempted) {
-      if (playerShip.getFuel() < 33) {
-        General::printWithTypingEffect("Not enough fuel to escape!");
-        escapeAttempted = true; // Mark escape as attempted
-        continue;
-      }
-      float escapeChance = Ship::escapeProbability(playerShip.getType()) * 50; // Base escape chance
-      if (rand() % 100 < escapeChance) {
-        General::printWithTypingEffect(
-            "Successfully escaped the space pirates!");
-        playerShip.refuel(-33); // Deduct fuel for the escape attempt
-        break;                  // Exit the encounter
-      } else {
-        General::printWithTypingEffect(
-            "Failed to escape. You cannot attempt to escape again.");
-        escapeAttempted = true; // Mark escape as attempted
-      }
-    } else if (action == "F") {
-      // Fighting logic
-      General::printWithTypingEffect(
-          rand() % 2 == 0 ? "Won the fight against the space pirates!"
-                          : "Lost the fight, taking damage.");
-      playerShip.takeDamage(rand() % 2 == 0 ? 0 : 30);
-      break; // Exit the encounter
-    } else if (action == "N" && !negotiationAttempted) {
-      int goldOptions[3] = {10, 20, 30};
-      int demand = goldOptions[rand() % 3];
-      if (playerShip.getMoney() < demand) {
-        General::printWithTypingEffect("Not enough gold to negotiate!");
-        negotiationAttempted = true; // Mark negotiation as attempted
-        continue;
-      }
-      playerShip.earnMoney(-demand); // Pay the pirates
-      std::ostringstream demandMessage;
-      demandMessage << "Negotiated with the pirates for " << demand << " gold.";
-      General::printWithTypingEffect(demandMessage.str());
-      break; // Exit the encounter
-    } else if ((action == "E" && escapeAttempted) ||
-               (action == "N" && negotiationAttempted)) {
-      General::printWithTypingEffect("You cannot choose this action again.");
-    } else {
-      General::printWithTypingEffect("Invalid action. Please choose again.");
+                    break;
+                case 2:
+                    General::printWithTypingEffect("WON THE FIGHT");
+                    break;
+            }
+            break;
+        }
+        else if(action == "N" && !negotiationAttempt){
+            std::random_device random_generator; //random generator to choose the events
+            std::mt19937 gen(random_generator());
+            std::uniform_int_distribution<>distribution(1,3);
+            int payment = distribution(gen)*10;
+            if(playerShip.getMoney() < payment){
+                General::printWithTypingEffect("NOT ENOUGH GOLD");
+                negotiationAttempt = true;
+                continue;
+            }
+                playerShip.earnMoney(-payment);
+                std::ostringstream demandMessage;
+                demandMessage << "Negotiated with pirates for " << payment << " Galactic Credits";
+                General::printWithTypingEffect(demandMessage.str());
+                break;
+        }
+        else if((action == "E" && escapeAttempt) || (action == "N" && negotiationAttempt)) {
+            General::printWithTypingEffect("You cannot choose this action again.");
+        }
+        else{
+            General::printWithTypingEffect("Invalid action. Please Choose Again");
+        }
     }
-  }
 }
 
 void GameEngine::calculateFinalScore() const {
