@@ -1,0 +1,3 @@
+C:/Users/o_ark/CLionProjects/Space_Voyagers_Divan_Edition_GOTY/cmake-build-debug/CMakeFiles/Space_Voyagers_Divan_Edition_GOTY.dir
+C:/Users/o_ark/CLionProjects/Space_Voyagers_Divan_Edition_GOTY/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/o_ark/CLionProjects/Space_Voyagers_Divan_Edition_GOTY/cmake-build-debug/CMakeFiles/rebuild_cache.dir
