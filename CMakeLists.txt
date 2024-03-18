@@ -1,22 +1,22 @@
-cmake_minimum_required(VERSION 3.1)
-project(SpaceAdventureGame)
+cmake_minimum_required(VERSION 3.10)
+project(SpaceAdventure)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${CMAKE_SOURCE_DIR})
-
-set(SOURCE_FILES
-    main.cpp
-    Ship.cpp
-    GameEngine.cpp
-    General.cpp
+# Add executable
+add_executable(SpaceAdventure main.cpp game.cpp ship.cpp
+        GeneralFunc.h
+        GeneralFunc.cpp
+        event.cpp
+        GameStarter.h
+        GameStarter.cpp
 )
 
-set(HEADER_FILES
-    Ship.h
-    GameEngine.h
-    General.h
-)
+# Add include directories
+target_include_directories(SpaceAdventure PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-add_executable(SpaceAdventureGame ${SOURCE_FILES} ${HEADER_FILES})
+# Set executable output directory
+set_target_properties(SpaceAdventure PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin
+)
 
