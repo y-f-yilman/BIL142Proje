@@ -47,12 +47,17 @@ To compile the game, follow these steps:
 Run the following command:
 
 ```
-    g++ -o SpaceAdventureGame GameEngine.cpp Ship.cpp main.cpp General.cpp
+    g++ -o SpaceAdventure main.cpp game.cpp ship.cpp
+        GeneralFunc.h
+        GeneralFunc.cpp
+        event.cpp
+        GameStarter.h
+        GameStarter.cpp
 ```
 
 ## Usage
 After compiling, you can run the game by executing the binary:
 
 ```
-    ./SpaceAdventureGame
+    ./SpaceAdventure
 ```
