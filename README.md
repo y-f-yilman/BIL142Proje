@@ -1,5 +1,7 @@
 # BIL142Proje
 Project Design For BIL142 Course in C++
+<u>NOTE:</u>
+It is recommended to use an external terminal when executing the game for a better experience 
 
 ![Local image](diagrams/system_headers.svg "System Headers")
     <figcaption>System Headers</figcaption>
